@@ -1,0 +1,126 @@
+.page-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+fieldset {
+    width: 20vw;
+    margin-top: 5vh;
+    padding-top: 2em;
+}
+
+.work-dates {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(31, 30, 30);
+    font-size: 1.5em;
+}
+
+button {
+    background-color: rgb(27, 105, 131);
+    border: none;
+    border-radius: 5px;
+    height: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(37, 123, 151);
+    cursor: grab;
+}
+
+button:active {
+    border: 1px solid black;
+}
+
+input, label {
+    color: rgb(31, 30, 30);
+    font-size: 1.1em;
+}
+
+input {
+    border: 1px solid gray;
+    height: 1.5em;
+    width: fit-content;
+}
+
+textarea {
+    border: 1px solid gray;
+    font-size: 1.2em;
+    color: rgb(31, 30, 30);
+    max-width: 100%;
+}
+
+@media (max-width: 500px) {
+    fieldset {
+        width: 75vw;
+        font-size: 1.5em;
+        height: auto;
+    }
+
+    input {
+        height: 1.5em;
+        font-size: 1em;
+        width: fit-content;
+    }
+
+    label {
+        margin-bottom: 5px;
+        margin-top: 5px;;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    fieldset {
+        width: 90%;
+        font-size: 1.5em;
+        height: auto;
+    }
+
+    legend {
+        font-size: 1.5em;
+    }
+
+    input {
+        height: 1.5em;
+        font-size: 1.5em;
+        width: fit-content;
+    }
+
+    textarea {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    label {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    button {
+        height: 2em;
+        width: 20vw;
+        font-size: 2em;
+    }
+}
